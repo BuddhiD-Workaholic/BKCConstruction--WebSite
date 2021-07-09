@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1,h2,h3,h4,h5,h6 {
+	box-sizing: border-box;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+  float: left;
+}
+
+ .carousel-control.right .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+
+.span4 .img-right {
+    float: right;
+}
+
+/* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 65%;
+  }
+
+
+.bg-dark{
+	background-color:#04204e !important;
+}
+
+.navbar-toggler{
+margin: 0px 0px 0px 0px;
+}
+
+.navbar-brand{
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 22px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.navbar-dark .navbar-nav .nav-item{
+	margin: 0 10px;
+}
+
+.navbar-nav .nav-item a:hover {
+	background-color: teal;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+color:white;
+  transform: translate(-50%, -50%);
+}
+
+
+p.Title01{
+	text-align: center;
+	font-size: 16px;
+}
+
+p.h1{
+	font-size: 24px;
+	text-shadow: 4px 4px 6px #000000;
+}
+
+p p.card-text{
+	text-align: justify;
+	font-size: 14px;
+}
+
+p.lim{
+	text-align: justify;
+	font-size: 18px;
+}
+
+.rob{
+	font-family: monospace;
+	font-size: 16px;
+	color: solid black;
+	margin: 0px 0px 22px 0px
+}
+
+h1.Cen{
+	font-size: 4vw;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-shadow: 4px 4px 6px #000000;
+}
+
+h1.CenM{
+	font-size: 5.2vw;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h2.Title {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+h3{
+	color:#04204e;
+}
+
+h3.Topic{
+	color:#04204e;
+	font-size: 32px;
+	margin: 0px 0px 0px 0px;
+}
+
+h4.Title01{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 48px;
+}
+
+h5 h5.card-title{
+	font-size: 20px;
+}
+
+btn{
+	color: #04204e;
+}
+
+img.img-right .img-left{
+	padding-left: 18px;
+}
+
+.FcolrSub{
+	border-style: solid;
+	 border-color:rgba(4,92,228,1.00);
+	 border-radius: 22px;
+}
+
+.X{
+	background-color: mintcream;
+	 font-weight: bold;
+}
+
+/*Starts*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+span{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-head h4::before{
+  content:'';
+  width:60px;
+  height:3px;
+  background:#4DD5FF;
+  position:absolute;
+  bottom:-10px;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.section-head h4 span{
+  font-weight: 700;
+  padding-bottom: 5px;
+  color:#2f2f2f;
+} 
+.section-head p{
+  color:#818181;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+.item{
+  background:#fff;
+  text-align: center;
+  padding:30px 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.07);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border:5px solid rgba(0,0,0,0.07);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item:hover{
+  background: teal;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item:hover .item,
+.item:hover span.icon{
+  background:#fff;
+  border-radius: 10px;
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item:hover h6,
+.item:hover p{
+  color:#fff;
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item .icon{
+  font-size:40px;
+  margin-bottom: 25px;
+  color:teal;
+  width:90px;
+  height:90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+.item .feature_box_col_one{
+  background:rgba(247,198,5,0.2);
+  color:teal;
+}
+.item .feature_box_col_two{
+  background: rgba(255, 77, 28, 0.15);
+  color:teal;
+}
+.item .feature_box_col_three{
+  background:rgba(247,198,5,0.2);
+  color:teal;
+}
+.item .feature_box_col_four{
+  background:rgba(0,108,255,0.15);
+  color:teal;
+}
+.item .feature_box_col_five{
+  background:rgba(146,39,255,0.15);
+  color:teal;
+}
+.item .feature_box_col_six{
+  background:rgba(23,39,246,0.15);
+  color:teal;
+}
+.item p{
+  font-size: 15px;
+  line-height: 26px;
+}
+.item h6{
+  margin-bottom: 20px;
+  color:#2f2f2f;
+}
+/*Ends*/
+
+input:invalid{
+	border: 2px solid red;
+}
+
+input:valid{
+	border: 1px solid blue;
+}

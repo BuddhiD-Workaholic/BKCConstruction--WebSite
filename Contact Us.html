@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BKC Constructions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Boostrap Starts-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!--Boostrap Ends-->
+
+  <!--Jquery Starts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Jquery Ends-->
+
+  <!--Import Files Starts-->
+  <link rel="stylesheet" type="text/css" href="styleSS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script type="text/javascript" src="JqueryandAjax.js"></script>
+  <!--Import Files Ends-->
+
+</head>
+
+<body>
+  <!--Navigation Bar Start-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark x-navbar-fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="Images/bkclogo3.png" alt="Logo" width="277" height="42" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#naContent"
+        aria-controls="naContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-auto">
+        <div class="collapse navbar-collapse" id="naContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item"> <a class="nav-link" href="Index.html">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Services.html">Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="JobPortal.php">Join Us / Job Portal</a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="Contact Us.html">Contact Us</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar End-->
+
+  <!--Section Image-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="maintxt">
+        <img src="Images/ezgif.com-gif-maker.png" class="img-fluid" alt="Error">
+        <div class="carousel-caption">
+          <h1 class="Cen" align="right"><b>Contact Us</b></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section Image Ends-->
+
+  <br>
+
+  <!--Section 01 Starts-->
+  <div class="container">
+    <h3>Drop us a message</h3><br>
+	  <p align="justify">We are always prepared to be at your service. Feel free to contact us for further information regarding our services by filling up the following form, and we will get back to you soon.</p>
+    <div class="row">
+    </div>
+  </div>
+  <!--Section 01 Ends-->
+
+  <!--Section Form Strats-->
+  <div class="container shadow-sm p-4 mb-4 bg-white">
+    <form method="post" action="Contact.php">
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline" data-toggle="tooltip" data-placement="top" title="Fisrt Name!">
+            <input type="text" id="txtFName" name="txtFName" class="form-control" />
+            <label class="form-label" for="txtFName">First name</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline" data-toggle="tooltip" title="Last Name">
+            <input type="text" id="txtLName" Name="txtLName" class="form-control" />
+            <label class="form-label" for="txtLName">Last name</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-outline mb-4" data-toggle="tooltip" title="Email">
+        <input type="text" id="txtEmail" name="txtEmail" class="form-control" />
+        <label class="form-label" for="txtEmail">Email</label>
+      </div>
+      <div class="form-outline mb-4" data-toggle="tooltip" title="Subject">
+        <input type="text" id="txtSubject" name="txtSubject" class="form-control" />
+        <label class="form-label" for="txtSubject">Subject</label>
+      </div>
+      <div class="form-outline mb-4" data-toggle="tooltip" title="Message">
+        <textarea class="form-control" id="txtMessage" name="txtMessage" rows="4" cols="20">
+</textarea>
+        <label class="form-label" for="txtMessage">Your Message</label>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4" data-toggle="tooltip" title="Submit">
+      <div class="text-center">
+        <button type="submit" name="ContactSubmit" value="add" class="btn btnSubmited btn-outline-primary btn-default btn-block">Submit Form</button>
+      </div>
+    </div>
+    <div class="col-sm-4" data-toggle="tooltip" title="Cancel">
+      <div class="text-center">
+        <button type="cancel" class="btn btnSubmited btn-outline-primary btn-default btn-block">Cancel</button>
+      </div>
+    </form>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <!--Buttons ends-->
+
+  <br><br><br><br>
+
+  <!--Section 02 Starts-->
+  <div class="container">
+    <h3>Visit Us</h3>
+    <div class="row">
+    </div>
+  </div>
+  <!--Section 02 Ends-->
+
+  <!--Location Starts-->
+  <div class="container shadow-sm p-4 mb-4 bg-white">
+    <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+        <div data-toggle="tooltip" title="Open in Google-Map">
+          <a href="https://goo.gl/maps/JS3VDrj4mNeBdv137" target="_blank"><img src="Images/Map.png" class="img-fluid"
+              alt="Map"></a>
+        </div>
+      </div>
+      <div class="col-md-3 text-center"><br>
+        <ul class="list-unstyled mb-0">
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+			  <p>Head Office<br>
+            No 05, Ward Place, Colombo 07.</p>
+          </li>
+          <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+ 01 234 567 89</p>
+          </li>
+          <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+            <p>Contact@BKCConstructions.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Location Ends-->
+
+
+  <br><br>
+
+ <!--Footer Start-->
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+      </section>
+      <!-- Section: Social media -->
+      <!-- Section: Form -->
+      <section class="FcolrSub">
+        <div data-toggle="tooltip" title="Get Updates/ Sign up to our news later">
+          <br>
+          <form method="post" action="NewsLaterSub.php">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" name="txtEFAddres" id="txtEFAddres" class="form-control" />
+                  <label class="form-label" for="txtEFAddres">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" name="NewsSub" value="add" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form> 
+		</div>
+      </section>
+      <!-- Section: Form -->
+      <!-- Section: Text -->
+      <section class="mb-4"><br>
+        <p>BKC Constructions is a registered Company in Sri Lanka (Under Comp/12G/1) and a company limited by guarantee
+          registered only in Sri Lanka.<br> Registered office: No 05, Ward Place, Colombo 07. </p>
+      </section>
+      <!-- Section: Text -->
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Our Story</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Management Team</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">News/Blog</a>
+              </li>
+
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Legal</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Cookies</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Privacy and Data Protection</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Press contacs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Follow Us On</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">+ 01 234 567 89</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact@BKCConstructions.com</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">2342.423.423 Fax</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">BKC Constructions.com</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      ©2021 by BKC Building constructions.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!--Footer End-->
+
+</body>
+
+</html>

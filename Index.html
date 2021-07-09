@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Boostrap Starts-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!--Boostrap Ends-->
+
+  <!--Jquery Starts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <!--Jquery Ends-->
+
+  <!--Import Files Starts-->
+  <link rel="stylesheet" type="text/css" href="styleSS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script type="text/javascript" src="JqueryandAjax.js"></script>
+  <!--Import Files Ends-->
+</head>
+
+<body>
+  <!--Navigation Bar Start-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark x-navbar-fixed-top nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="Images/bkclogo3.png" alt="Logo" width="277" height="42" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#naContent"
+        aria-controls="naContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-auto">
+        <div class="collapse navbar-collapse" id="naContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="Index.html"
+                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Home</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#WhoWeAre">About Us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#WhyWe">Why We?</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#ProjectCount">Completed Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#FProjects">Upcoming Projects</a>
+              </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="Services.html">Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="JobPortal.php">Join Us / Job Portal</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Contact Us.html">Contact Us</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar End-->
+
+  <!--Image Slider-->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/ezgif.png" width="1100" height="250" alt="Error">
+        <div class="carousel-caption centered">
+          <h1 class="CenM" align="center"><b>BKC Constructions</b></h1>
+          <p class="h1" align="center" style="font-size:1.6vw;"><i>Sri Lanka's most trusted Building constructor</i></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/773716.jpg" alt="Error" width="1100" height="250">
+        <div class="carousel-caption centered">
+          <h1 class="CenM" align="center"><b>BKC Constructions</b></h1>
+          <p class="h1" align="center" style="font-size:1.6vw;"><i>Sri Lanka's most trusted Building constructor</i></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/937101.png" alt="Error" width="1100" height="250">
+        <div class="carousel-caption centered">
+          <h1 class="CenM" align="center"><b>BKC Constructions</b></h1>
+          <p class="h1" align="center" style="font-size:1.8vw;"><i>Sri Lanka's most trusted Building constructor</i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <br><!--HTML Inside 01 links-->
+	<a name="WhoWeAre"></a>
+	
+  <!--Section 01 Start-->
+  <!--Shaddow-->
+  <div class="shadow-lg p-4 mb-4 bg-white">
+    <div class="container">
+      <div class="row">
+      </div>
+      <div class="block">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="span4">
+            <div class="content-heading" align="center"><br>
+              <h3 class="Topic">Who We Are</h3>
+            </div>
+            <p class="rob" align="center">Committed to Excellence</p>
+            <img src="Images/BKC_Logo.png" alt="Logo" width="207" height="189" class="rounded mx-auto d-block"><br>
+            <p class="Title01">Since breaking into the industry in 2000, BKC Building constructions has been recognized as a dependable contractor. We’ve provided clients with a wide range of services for all their needs. Whatever you have in mind, our professionals work to bring your dreams to life. Contact us to receive a free estimate today. When you’re looking for top quality work, BKC Building constructions is here to help. Our contracting professionals are available to provide a wide range of customizable options, all guaranteed to meet and exceed expectations. Contact our office today to learn more about this and our other available services.
+            </p>
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section 01 Ends-->
+
+  <br><!--HTML Inside 02 links-->
+	<a name="WhyWe"></a>
+
+  <!--Section 02 Start-->
+  <!--Shaddow-->
+  <div class="shadow-lg p-4 mb-4 bg-white">
+    <div class="container">
+      <div class="row">
+      </div>
+      <div class="block">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="span4">
+            <div class="content-heading" align="center"><br>
+              <h3 class="Topic">Why you should choose us</h3>
+            </div><br>
+            <p class="Title01" align="center">By introducing novelty, effective strategies, up-to date technologies and solutions into the real estate sector in Sri Lanka, we strive to exceed customer expectations by further improving the quality of services provided through constant training of our employees with innovations in real estate development, while contributing to country’s economy and the natural sustainability in ensuring the uplifting quality of lives of Sri Lankan community as a whole.</p><br><br>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+              <h5>Modern Design</h5>
+              <p>Modern architecture, or modernist architecture, was an architectural movement or architectural style based upon new and innovative technologies of construction, particularly the use of glass, steel, and reinforced concrete.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_two"><i class="fas fa-building"></i></span>
+              <h5>Market Strategy</h5>
+              <p>Marketing strategy is a long-term, forward-looking approach and an overall game plan of any organization or any business with the fundamental goal of achieving a sustainable competitive advantage by understanding the needs and wants of customers. And We Understand that!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_three"><i class="fas fa-hard-hat"></i></span>
+              <h5>Experinced Workers</h5>
+              <p>With labor force size, participation rate and productivity so closely tied to business and economic growth, the experienced workforce is a source of talent and competitive advantage that employers need to embrace now.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_four"><i class="fas fa-handshake"></i></span>
+              <h5>Business Growth</h5>
+              <p>Business Growth is a stage where the business reaches the point for expansion and seeks additional options to generate more profit. Business growth is a function of the business lifecycle, industry growth trends, and the owners desire for equity value creation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_five"><i class="fas fa-seedling"></i></span>
+              <h5>Sustainable Development</h5>
+              <p>Sustainable development is the idea that human societies must live and meet their needs without compromising the ability of future generations to meet their own needs. We BKC Constaructins understand this, We do our own weast managemnt in a sustainable manner.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_six"><i class="fas fa-pencil-ruler"></i></span>
+              <h5>Creative Design</h5>
+              <p>The creative design includes designs that are unique, effective and memorable. It involves going out of your way to make it unique. Whether you are considering starting out with new construction or renovating your home, we will hold your hand through the whole process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section 02 Ends-->
+
+  <br>  <br><!--HTML Inside 03 links-->
+	<a name="ProjectCount"></a>
+
+  <!--Sec 03 Starts-->
+  <div class="shadow-lg p-4 mb-4 bg-white">
+    <div class="container">
+      <div class="row"><br>
+		   <p class="Title01" align="center">Over the years we abled to complete morethan 2000 Local and international constaruction projects. These are some of our latest project we abled to complete.</p><br><br><br>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card" style="max-width: 18rem;">
+            <div class="card-header X bg-dribbble content-center" align="center">Home and Apartment Constructions
+            </div>
+            <div class="card-body row text-center">
+              <div class="col">
+                <h4 class="count">1345</h4>
+                <div class="text-uppercase text-muted small">Completed</div>
+              </div>
+              <div class="vr"></div>
+              <div class="col">
+                <h4 class="count">19</h4>
+                <div class="text-uppercase text-muted small">Working</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card" style="max-width: 18rem;">
+            <div class="card-header X bg-behance content-center" align="center"> Road Constructions
+            </div>
+            <div class="card-body row text-center">
+              <div class="col">
+                <h4 class="count">1122</h4>
+                <div class="text-uppercase text-muted small">Completed</div>
+              </div>
+              <div class="vr"></div>
+              <div class="col">
+                <h4 class="count">41</h4>
+                <div class="text-uppercase text-muted small">Working</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card" style="max-width: 18rem;">
+            <div class="card-header X bg-facebook content-center" align="center">Bridge Costruction and Water Supply
+              Drainage
+            </div>
+            <div class="card-body row text-center">
+              <div class="col">
+                <h4 class="count">935</h4>
+                <div class="text-uppercase text-muted small">Completed</div>
+              </div>
+              <div class="vr"></div>
+              <div class="col">
+                <h4 class="count">15</h4>
+                <div class="text-uppercase text-muted small">Working</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Sec 03 Ends-->
+
+  <br> <br><!--HTML Inside 04 links-->
+	<a name="FProjects"></a>
+  <br>
+
+  <!--Upcoming Projects-->
+  <div class="container">
+    <h3 class="Topic">Upcoming Projects</h3>
+  </div><br>
+  <div class="container-fluid padding">
+    <div class="row justify-content-center">
+      <div class="card-deck">
+        <div class="col-md-1">
+        </div>
+        <div class="card col-md-3">
+          <img class="card-img-top" src="Images/imgD1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Luxury home complex</h5>
+            <p align="justify" class="card-text">Residencies is one of its kind schematic residential initiative of Home Lands Skyline, which incorporates a splendid collection of Victorian style Golf View Apartments, Garden View Apartments, and Residencies (with 02, 03 & 04 bedrooms) & luxury land plots, tagged with an attractive price of Rs. 7.9 million upwards. </p>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Location:</b> Horona </li>
+              <li class="list-group-item"><b>Staring Date:</b> 2021 October </li>
+            </ul>
+            <small class="text-muted">
+              <div class="text-center">
+                <a target="_blank" href="Images/project-budget.pdf"
+                  class="btn btn-outline-info btn-default btn-block" role="button">See Project Details</a>
+              </div>
+            </small>
+          </div>
+        </div>
+
+        <div class="card col-md-3">
+          <img class="card-img-top" src="Images/imgD2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Apartment complex</h5>
+            <p align="justify" class="card-text">Santorini Resort Apartments and Residencies – Sri Lanka’s First Theme Park Style Resort Apartments and Residencies   Santorini Resort Apartments and Residencies was launched by BKC Constructions and is Sri Lanka’s first theme park style resort apartments and residencies project. The project will be launched in May 2021 at the project premises in Colombo 01.</p>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Location:</b> Colombo 01 </li>
+              <li class="list-group-item"><b>Staring Date:</b> 2021 May </li>
+            </ul>
+            <small class="text-muted">
+              <div class="text-center">
+                <a target="_blank" href="Images/project-budget.pdf"
+                  class="btn btn-outline-info btn-default btn-block" role="button">See Project Details</a>
+              </div>
+            </small>
+          </div>
+        </div>
+
+        <div class="card col-md-3">
+          <img class="card-img-top" src="Images/imgD3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Apartment complex</h5>
+            <p align="justify" class="card-text">The city of Colombo has changed over the years. The skyline, the buildings, service centers, places of entertainment, shopping arcades, the parks, and even the fauna and flora of the surrounding areas have shifted the axis of the city.The project will be launched in May 2021 at the project premises in Colombo 07.</p>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Location:</b> Colombo 07 </li>
+              <li class="list-group-item"><b>Staring Date:</b> 2021 Jun </li>
+            </ul>
+            <small class="text-muted">
+              <div class="text-center">
+                <a target="_blank" href="Images/project-budget.pdf"
+                  class="btn btn-outline-info btn-default btn-block" role="button">See Project Details</a>
+              </div>
+            </small>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div>
+  </div>
+  <!--End Of newsfeed-->
+
+  <br>
+
+  <!--Footer Start-->
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+      </section>
+      <!-- Section: Social media -->
+      <!-- Section: Form -->
+      <section class="FcolrSub">
+        <div data-toggle="tooltip" title="Get Updates/ Sign up to our news later">
+          <br>
+          <form method="post" action="NewsLaterSub.php">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" name="txtEFAddres" id="txtEFAddres" class="form-control" />
+                  <label class="form-label" for="txtEFAddres">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" name="NewsSub" value="add" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form> 
+		</div>
+      </section>
+      <!-- Section: Form -->
+      <!-- Section: Text -->
+      <section class="mb-4"><br>
+        <p>BKC Constructions is a registered Company in Sri Lanka (Under Comp/12G/1) and a company limited by guarantee
+          registered only in Sri Lanka.<br> Registered office: No 05, Ward Place, Colombo 07. </p>
+      </section>
+      <!-- Section: Text -->
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Our Story</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Management Team</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">News/Blog</a>
+              </li>
+
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Legal</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Cookies</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Privacy and Data Protection</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Press contacs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Follow Us On</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">+ 01 234 567 89</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact@BKCConstructions.com</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">2342.423.423 Fax</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">BKC Constructions.com</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      ©2021 by BKC Building constructions.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<script>$('.count').counterUp(
+		{delay: 20,time: 2000});</script>
+  <!--Footer End-->
+</body>
+
+</html>
